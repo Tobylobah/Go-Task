@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;0,900;1,400&family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+	<!-- End of Fonts -->
+	<link rel="stylesheet" href="main.css">
+  <title>Todo List</title>
+</head>
+<body>
+  <div class="main-container">
+    <!-- Greeting -->
+		<section class="greeting">
+			<h2 class="title">
+				What's up, <input type="text" id="nameInput" placeholder="Name here" />
+			</h2>
+		</section>
+		<!-- End of Greeting -->
+    <!-----Hype------------>
+    <section class="hype">
+      <p><input type="text" id="nameInput" placeholder="Hype yourself for today's task"></p>
+    </section>
+    <!-----End of Hype------>
+
+    <section>
+      <h3>Create Todo</h3>
+      <div class="todo-input-grid">
+        <h4>Task Name</h4>
+        <input class="js-name-input" type="text" placeholder="Todo name">
+        <h4>Date</h4>
+        <input type="date" class="js-due-date-input">
+        <div class="Time">
+          <div>
+            <h4>Start Time</h4>
+            <input class="js-start-time-input" type="time">
+          </div>
+          <div>
+            <h4>End Time</h4>
+            <input  class="js-end-time-input" type="time">
+          </div>
+        </div>
+        <button class="btn-add" onclick="addTodo();">Add Task</button>
+      
+        <div class="js-todo-list todo-output-grid">
+        </div>      
+      </div>
+    </section>
+  </div>
+	<script src="main.js"></script>
+	</body>
+	</html>
+
+
+
+

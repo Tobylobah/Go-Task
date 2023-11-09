@@ -1,0 +1,151 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'montserrat', sans-serif;
+	overflow-x: hidden;
+}
+.main-container{
+	padding:30px 40px;
+	background-color: #EEE;
+}
+input , button{
+	border: none;
+}
+h3{
+color:#313154;
+font-size: 1.5rem;
+font-weight: 500;
+margin-bottom: 0.5rem;
+padding:20px 0;
+}
+h4{
+color: #888;
+font-size: 1rem;
+font-weight: 700;
+margin-bottom: 0.5rem;
+}
+
+.greeting input[type=text] , .hype input[type=text] {
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+	cursor: initial;
+	width:100%;
+}
+.greeting .title {
+	display: flex;
+}
+.greeting .title input {
+	margin-left: 0.5rem;
+	flex: 1 1 0%;
+	min-width: 0;
+}
+.greeting .title, 
+.greeting .title input {
+color: #313154;
+font-size: 1.5rem;
+font-weight: 700;
+}
+.todo-grid {
+display: grid;
+grid-template-columns: 1fr;
+column-gap: 10px;
+row-gap: 10px;
+align-items: center;
+}
+.hype{
+padding-top: 10px;
+}
+.hype input{
+font-size: 18px;
+}
+.hype ::placeholder{
+font-size: 18px;
+}
+.todo-input-grid input{
+display: block;
+width: 100%;
+font-size: 1.125rem;
+padding: 1rem 1.5rem;
+color: #313154;
+background-color: #FFF;
+border-radius: 0.5rem;
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+margin-bottom: 1.5rem;
+}
+.todo-output-grid{
+
+width: 100%;
+font-size: 1.125rem;
+color: #313154;
+background-color: #FFF;
+border-radius: 0.5rem;
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+margin: 1.5rem 0;
+padding:20px 10px;
+line-height: 40px;
+}
+
+.todo-output-grid > div {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+border-bottom: 2px solid #EA40A4;
+padding-bottom: 5px; 
+margin-bottom: 10px; 
+}
+
+.Time{
+display:grid;
+grid-template-columns: 1fr 1fr;
+column-gap: 30px;
+}
+.btn-add{
+display: block;
+width: 100%;
+font-size: 1.125rem;
+padding: 1rem 1.5rem;
+color: #FFF;
+font-weight: 700;
+text-transform: uppercase;
+background-color: #EA40A4;
+box-shadow: 0px 0px 4px rgba(234, 64, 164, 0.75);
+border-radius: 0.5rem;
+cursor: pointer;
+transition: 0.2s ease-out;
+}
+.btn-delete{
+display: block;
+font-size: 1.125rem;
+padding: 0.5rem 1.5rem;
+color: #FFF;
+font-weight: 700;
+text-transform: uppercase;
+background-color: #313154;
+border-radius: 0.5rem;
+cursor: pointer;
+transition: 0.2s ease-out; 
+}
+@media(max-width:768px){
+.todo-output-grid{
+
+width: 100%;
+font-size: 1.125rem;
+color: #313154;
+background-color: #FFF;
+border-radius: 0.5rem;
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+margin: 1.5rem 0;
+padding:20px 10px;
+line-height: 40px;
+}
+
+.todo-output-grid > div {
+display: grid;
+grid-template-columns: 1fr 1fr ;
+border-bottom: 2px solid #EA40A4;
+padding-bottom: 5px; 
+margin-bottom: 10px; 
+}
+}
